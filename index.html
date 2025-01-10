@@ -7,9 +7,38 @@
 </head>
 <body>
 
+<!--在網頁跳出小視窗提醒，1.更新版 2.月份，是從0開始計算，所以要+1-->
+<script>
+    //         alert("請至網頁更新最新版");
+    //
+    //         const currentDate  =new Date();
+    //         const currentMonth = currentDate.getMonth()+1;
+    //         alert(`這個月是 ${currentMonth} 月`)
+    //
+    //         let date=prompt("請輸入密碼","12345678");
+    //
+    //
+    // <!--彈出視窗  現在時間是:14點49分51秒-->
+    //
+    //         const currentTime  =new Date();
+    //         const currentHours = currentTime.getHours();
+    //         const currentMinutes = currentTime.getMinutes();
+    //         const currentSeconds = currentTime.getSeconds();
+    //         alert(`現在時間是 ${currentHours} 點 ${currentMinutes}分 ${currentSeconds}秒`);
+</script>
+<script>
+    let day = prompt("請輸入星期幾");
+    switch (day) {
+        case "星期一";
+            alert("上學");
+            break;
+        default:
+            alert("錯誤");
+            break;
+    }
+
+</script>
 
 
-
-<script src="app.js"></script>
 </body>
 </html>
