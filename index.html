@@ -6,38 +6,28 @@
     <title>Document</title>
 </head>
 <body>
-<a href="javascript:time">顯示時間</a>
 
 <!--在網頁跳出小視窗提醒，1.更新版 2.月份，是從0開始計算，所以要+1-->
     <script>
-//         alert("請至網頁更新最新版");
-//         const currentDate  =new Date();
-//         const currentMonth = currentDate.getMonth()+1;
-//         alert(`這個月是 ${currentMonth} 月`)
-//
-//         let date=prompt("請輸入密碼","12345678");
-//
-// <!--彈出視窗  現在時間是:14點49分51秒-->
-//
-//         const currentTime  =new Date();
-//         const currentHours = currentTime.getHours();
-//         const currentMinutes = currentTime.getMinutes();
-//         const currentSeconds = currentTime.getSeconds();
-//         alert(`現在時間是 ${currentHours} 點 ${currentMinutes}分 ${currentSeconds}秒`);
-
-        function time(){
-            const currentTime  =new Date();
-            const currentHours = currentTime.getHours();
-            const currentMinutes = currentTime.getMinutes();
-            const currentSeconds = currentTime.getSeconds();
-            alert(`現在時間是 ${currentHours} 點 ${currentMinutes}分 ${currentSeconds}秒`);
-        }
-<!--輸入分數判斷等級-->
-  let nn=prompt("請輸入分數");
-        if (nn>=90){
-        alert(`等極為A`);
-        }
-</script>
+        alert("請至網頁更新最新版");
+    </script>
+    <script>
+        const currentDate  =new Date();
+        const currentMonth = currentDate.getMonth()+1;
+        alert(`這個月是 ${currentMonth} 月`)
+    </script>
+    <script>
+        let date=prompt("請輸入密碼","12345678");
+    </script>
+    
+<!--彈出視窗  現在時間是:14點49分51秒-->
+    <script>
+        const currentTime  =new Date();
+        const currentHours = currentTime.getHours();
+        const currentMinutes = currentTime.getMinutes();
+        const currentSeconds = currentTime.getSeconds();
+        alert(`現在時間是 ${currentHours} 點 ${currentMinutes}分 ${currentSeconds}秒`);
+    </script>
  
 
 </body>
