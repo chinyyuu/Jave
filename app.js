@@ -47,17 +47,21 @@
 //         }
 
 <!--顯示上下午時間-->
-function time() {
-    const currentTime = new Date();
-    let currentHours = currentTime.getHours();
-    const currentMinutes = currentTime.getMinutes();
-    const currentSeconds = currentTime.getSeconds();
+// function time() {
+//     const currentTime = new Date();
+//     let currentHours = currentTime.getHours();
+//     const currentMinutes = currentTime.getMinutes();
+//     const currentSeconds = currentTime.getSeconds();
+//
+//     if (currentHours >= 12)
+//     {   currentHours-=12;
+//         alert(`現在時間是下午 ${currentHours} 點 ${currentMinutes}分 ${currentSeconds}秒`);
+//     } else {
+//         alert(`現在時間是上午 ${currentHours} 點 ${currentMinutes}分 ${currentSeconds}秒`);
+//     }
+// }
+// time();
 
-    if (currentHours >= 12)
-    {   currentHours-=12;
-        alert(`現在時間是下午 ${currentHours} 點 ${currentMinutes}分 ${currentSeconds}秒`);
-    } else {
-        alert(`現在時間是上午 ${currentHours} 點 ${currentMinutes}分 ${currentSeconds}秒`);
-    }
+for (let i=1;i<=10;i++){
+    document.write(i+"<h1>");
 }
-time();
