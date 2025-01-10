@@ -3,32 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>首頁</title>
 </head>
 <body>
+<a href="javascript:time()">連結文字</a>
+<a href="javascript:timee()">顯示時間</a>
 
-    <!--在網頁跳出小視窗提醒，1.更新版 2.月份，是從0開始計算，所以要+1-->
-    <script>
-        alert("請至網頁更新最新版");
-    </script>
-    <script>
-        const currentDate  =new Date();
-        const currentMonth = currentDate.getMonth()+1;
-        alert(`這個月是 ${currentMonth} 月`)
-    </script>
-    <script>
-        let date=prompt("請輸入密碼","12345678");
-    </script>
-    
-<!--彈出視窗  現在時間是:14點49分51秒-->
-    <script>
-        const currentTime  =new Date();
-        const currentHours = currentTime.getHours();  
-        const currentTime  =new Date();
-        const currentMinutes = currentTime.getMinutes();       
-        alert(`現在時間是 ${currentHours;currentMinutes} 點`);
-    </script>
- 
+<!--在網頁跳出小視窗提醒: 1.更新版-->
+<script>
+    //     alert("請至網頁更新最新版");
+    // <!--在網頁跳出小視窗提醒: 2.月份，是從0開始計算，所以要+1-->
+    //     const currentDate = new Date();
+    //     const currentMonth = currentDate.getMonth() + 1;
+    //     alert(`這個月是 ${currentMonth} 月`)
+    //     <!--3.在網頁跳出小視窗提醒 輸入密碼等-->
+    //     let date = prompt("請輸入密碼", "12345678");
+    //
+    //     <!--4.彈出視窗  現在時間是:14點49分51秒-->
+    //     const currentTime = new Date();
+    //     const currentHours = currentTime.getHours();
+    //     const currentMinutes = currentTime.getMinutes();
+    //     const currentSeconds = currentTime.getSeconds();
+    //     alert(`現在時間是 ${currentHours} 點 ${currentMinutes}分 ${currentSeconds}秒`);
+    // function+自定義名稱(){程式碼}放在script+body
+    function time() {
+        prompt("請輸入姓名");
+    }
+    function timee() {
+        const currentTime = new Date();
+        const currentHours = currentTime.getHours();
+        const currentMinutes = currentTime.getMinutes();
+        const currentSeconds = currentTime.getSeconds();
+        alert(`現在時間是 ${currentHours} 點 ${currentMinutes}分 ${currentSeconds}秒`);
+    }
+</script>
 
 </body>
 </html>
